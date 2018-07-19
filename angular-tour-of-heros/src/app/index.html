@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> -->
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-toggle.css">
+
+
+    <title>Hello, world!</title>
+    
+    <style type="text/css">
+
+        * {
+          margin: 0;
+          padding: 0;
+        }
+
+        body {
+          background-color: #000
+        }
+
+        .fly-in-text {
+          list-style: none;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          
+        }
+
+        .fly-in-text li {
+          display: inline-block;
+          /*font-family: Open Sans, Arial;*/
+          font-weight: lighter;
+          font-size: 4em;
+          color: white;
+          letter-spacing: 8px;
+          opacity: 1;
+          transition: all 2.5s ease;
+        }
+
+        .fly-in-text li:last-child {
+          margin-right: 0;
+        }
+
+        .fly-in-text.hidden li {
+          opacity: 0;
+        }
+
+        .fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+        .fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+        .fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+        .fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+        .fly-in-text.hidden li:nth-child(5) { transform: translateX(-500px) translateY(200px); }
+        .fly-in-text.hidden li:nth-child(6) { transform: translateX( 20px) translateY(-20px); }
+        .fly-in-text.hidden li:nth-child(7) { transform: translateX(40px) translateY(200px); }
+
+    </style>
+
+  </head>
+  <body class="bg-dark" data-spy="scroll" data-target="#navbar_id" data-offset="0">
+
+    <ul class="fly-in-text hidden">
+      <li>W</li>
+      <li>E</li>
+      <li>L</li>
+      <li>C</li>
+      <li>O</li>
+      <li>M</li>
+      <li>E</li>
+    </ul>
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>   
+    <script type="text/javascript">
+
+        // $(function() {
+
+        //   setTimeout(function() {
+        //       $('fly-in-text').removeClass('hidden')
+        //   }, 500);
+        // })();
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelector(".fly-in-text").classList.remove('hidden');
+        });
+        setTimeout(function(){ window.location.href = "http://alaapsivaram.github.io/avatar.html"; }, 5000);
+        // window.location.replace("http://stackoverflow.com");
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/bootstrap-toggle.min.js"></script>
+
+    
+
+
+  </body>
+</html> 
